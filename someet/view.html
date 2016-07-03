@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>活动详情</title>
+    <style type="text/css">
+
+        /*加载动画*/
+        body{
+            background-color: #eee;
+            width:100%;
+            height:100%;
+        }
+
+        .startAnimation {
+            padding-top:10px;
+            width: 100%;
+            position: absolute;
+            background-color: #ededed;
+            z-index: 999999999;
+        }
+
+        .spinner {
+            margin: 100px auto;
+            width: 55px;
+            height: 60px;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        .spinner > div {
+            background-color: #f6303f;
+            height: 100%;
+            width: 6px;
+            display: inline-block;
+            -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+            animation: stretchdelay 1.2s infinite ease-in-out;
+        }
+
+        .spinner .rect2 {
+            -webkit-animation-delay: -1.1s;
+            animation-delay: -1.1s;
+        }
+
+        .spinner .rect3 {
+            -webkit-animation-delay: -1.0s;
+            animation-delay: -1.0s;
+        }
+
+        .spinner .rect4 {
+            -webkit-animation-delay: -0.9s;
+            animation-delay: -0.9s;
+        }
+
+        .spinner .rect5 {
+            -webkit-animation-delay: -0.8s;
+            animation-delay: -0.8s;
+        }
+        @-webkit-keyframes stretchdelay {
+            0%,
+            40%,
+            100% {
+                -webkit-transform: scaleY(0.4)
+            }
+            20% {
+                -webkit-transform: scaleY(1.0)
+            }
+        }
+
+        @keyframes stretchdelay {
+            0%,
+            40%,
+            100% {
+                transform: scaleY(0.4);
+                -webkit-transform: scaleY(0.4);
+            }
+            20% {
+                transform: scaleY(1.0);
+                -webkit-transform: scaleY(1.0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="startAnimation">
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+</div>
+
+<div class="page-group" >
+    <div class="page page-current"  id="routerView">
+        <header class="bar bar-nav">
+            <a class="button button-link button-nav pull-left " href="./index.html">
+                <span class="icon icon-left"></span>
+                返回
+            </a>
+            <h1 class="title">SOMEET过往精彩活动介绍</h1>
+        </header>
+
+        <div class="content">
+
+            <div></div>
+            <div class="detail-title">
+                <img src="" alt="">
+            </div>
+            <!-- 分割线 -->
+            <div class="divider center"></div>
+            <!-- 活动详情 -->
+            <div class="detail-activity">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--<script type="text/javascript" src="static/lib/zeptoWithFxTouch.js"></script>-->
+<!--<script type="text/javascript" src="static/lib/sm.min.js"></script>-->
+
+<script type="text/javascript">
+    document.body.display = "none";
+window.location = "./index.html";
+</script>
+
+
+</body>
+</html>
